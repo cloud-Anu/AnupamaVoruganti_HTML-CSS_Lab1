@@ -1,0 +1,100 @@
+/* Reset some default styles for consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #fd1919;
+    color: #000000;
+    text-align: right;
+    padding: 1px 50px;
+    
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    text-align: left;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1px;
+    position: relative;
+}
+
+/* Style the links */
+nav ul li a {
+    text-decoration: none;
+    color: #fdfbfb;
+    padding: 5px 10px;
+    display: block;
+    /* background-color: #7a7a7a; */
+    border-radius: 4px;
+}
+
+/* Style the dropdowns */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #3071fe;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show dropdowns on hover */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown links on hover */
+nav ul li:hover .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Reset some default styles for consistency 
+div {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+*/
+.graph-container {
+    background-color: rgb(234, 234, 234); /* Set the background color of the div */
+    padding: 10px; /* Add padding for spacing inside the div */
+    border: 1px solid #ccc; /* Add a border for visibility */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    text-align: center; /* Center text within the div */
+    
+}
+
+.bar {
+    width: 40px;
+    height: 200px;
+    background-color: #3498db;
+    position: relative;
+    --percentage: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
